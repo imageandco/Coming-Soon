@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background image */
+    body {
+      background: url('images/bg.PNG') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 200px;
+      margin-bottom: 40px;
+    }
+
+    /* Coming Soon text */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Newsletter input */
+    .subscribe input[type="email"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      width: 250px;
+    }
+
+    .subscribe button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      background-color: #ff7f50;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .subscribe button:hover {
+      background-color: #ff5722;
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subscribe input[type="email"] {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="images/logo.PNG" alt="Logo" class="logo">
+
+  <!-- Coming Soon Text -->
+  <h1>Coming Soon</h1>
+  <p>We're working hard to bring you something amazing. Stay tuned and join our newsletter to get updates!</p>
+
+  <!-- Newsletter Subscription -->
+  <div class="subscribe">
+    <input type="email" placeholder="Enter your email" />
+    <button type="button">Join Now</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>&copy; 2025 Image & Co. All rights reserved.</footer>
+</body>
+</html>

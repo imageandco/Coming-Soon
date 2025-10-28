@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url("images/bg.png") center/cover no-repeat;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay with updated orange tone */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(246, 136, 43, 0.3); /* Orange from your PNG */
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+.contact-info {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Main */
+main {
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Countdown Styling */
+.countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  min-width: 100px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.time-box p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 12px;
+  }
+}

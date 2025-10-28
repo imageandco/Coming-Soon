@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We're Back | Image & Co</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Inline background reference to bg.PNG in images folder */
+    body {
+      background: url('images/bg.PNG') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Overlay for better text visibility */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+
+    header, main {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo img {
+      max-width: 200px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .time-box {
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 8px;
+      min-width: 70px;
+    }
+
+    .time-box span {
+      font-size: 2rem;
+      display: block;
+    }
+
+    .subtext {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background overlay -->
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.PNG" alt="Image & Co Logo" />
+    </div>
+    <div class="contact-info">
+      <p>901-718-8649 &nbsp;|&nbsp; Contact@ImageandCo901.com</p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <h1>We’re Back…</h1>
+    <p class="subtext">
+      Check back in then for exclusive launch offers, services on demand, and first dibs to join our management cohort.
+    </p>
+
+    <!-- Countdown -->
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <p>Days</p>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <p>Hours</p>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <p>Minutes</p>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <p>Seconds</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
